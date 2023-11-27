@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c35; /* Dark background color */
+    color: #fff; /* Text color */
+}
+
+.calculator-container {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    background-color: #40454f; /* Calculator background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #6b7385; /* Calculator border color */
+}
+
+.display {
+    grid-column: span 4;
+    background-color: #545b6b; /* Display background color */
+    padding: 12px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #6b7385; /* Display border color */
+}
+
+button {
+    padding: 16px;
+    font-size: 1.2em;
+    background-color: #646d7f; /* Button background color */
+    border: 1px solid #7f8799; /* Button border color */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7986a0; /* Button hover background color */
+}
+
+.info-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #40454f; /* Info bar background color */
+    padding: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 2px solid #6b7385; /* Info bar border color */
+}
+
+.info-bar p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #8795a8; /* Info bar text color */
+}
+
+.sheroxsyer-text {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #555; /* Choose a suitable color */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 400px) {
+    .calculator {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
